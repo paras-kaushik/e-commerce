@@ -50,6 +50,7 @@ public class User {
     @Column(name = "address")
     // Specifies the column name for the map's values in the collection table.
     private Map<String, String> addresses = new HashMap<>();
+
     public User(){}
     public User(String firstName, String lastName, LocalDate dob, String city, String password, String email, UserRole role, List<UserOrder> userOrders, List<String> interests, Map<String, String> addresses) {
         this.firstName = firstName;
